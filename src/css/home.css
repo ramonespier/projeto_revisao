@@ -39,15 +39,28 @@
 
 .linkedin {
     background-image: url(../img/linkedin.png);
-
 }
 
 .zap {
     background-image: url(../img/whatsapp.png);
-
 }
 
 .github {
     background-image: url(../img/github.png);
+}
 
+.tailwind {
+    background-image: url(../img/tailwind.png);
+}
+
+.php {
+    background-image: url(../img/php.png);
+}
+
+.email {
+    background-image: url(../img/email.png);
+}
+
+.js {
+    background-image: url(../img/javascript.png);
 }
