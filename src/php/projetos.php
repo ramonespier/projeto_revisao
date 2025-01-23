@@ -11,4 +11,11 @@ $focus = [
     "link" => "https://github.com/ramonespier/venda-de-cursos",
     "foto" => "../img/focus.png"
 ];
+
+$listenxd = [
+    "nome" => "ListenXD",
+    "link" => "https://ramonespier.github.io/listenxd/",
+    "foto" => "../img/listenxd.png"
+]
+
 ?>

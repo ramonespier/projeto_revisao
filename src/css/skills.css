@@ -1,0 +1,48 @@
+.js128 {
+    background-image: url(../img/js128.png);
+    transition: 0.2s;
+}
+.php128 {
+    background-image: url(../img/php128.png);
+    transition: 0.2s;
+}
+.tw128 {
+    background-image: url(../img/tw128.png);
+    transition: 0.2s;
+}
+.node128 {
+    background-image: url(../img/node128.png);
+    transition: 0.2s;
+}
+.git128 {
+    background-image: url(../img/git128.png);
+    transition: 0.2s;
+}
+.react128 {
+    background-image: url(../img/react128.png);
+    transition: 0.2s;
+}
+
+.card {
+    transition: 0.5s;
+}
+
+.icons {
+    position: relative;
+}
+
+.card:hover {
+    background: rgba(0, 0, 0, 0.76);
+}
+
+.c-js:hover::after,
+.c-php:hover::after,
+.c-tw:hover::after,
+.c-git:hover::after {
+    content: "Intermediário";
+}
+
+.c-node:hover::after,
+.c-react:hover::after {
+    content: "Básico";
+}

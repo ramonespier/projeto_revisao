@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customColor: {
+          fundoLeitura: 'rgba(0,0,0,0.5)'
+
 
         },
-      },
 
       fontFamily: {
         josefin: ['Josefin Sans', 'sans-serif'],
