@@ -27,12 +27,9 @@
     transition: 0.5s;
 }
 
-.icons {
-    position: relative;
-}
-
 .card:hover {
     background: rgba(0, 0, 0, 0.76);
+    transition: 0.5s;
 }
 
 .c-js:hover::after,
@@ -40,9 +37,20 @@
 .c-tw:hover::after,
 .c-git:hover::after {
     content: "Intermediário";
+    position: absolute;
+    padding: 10px;
+    background-color: black;
+
 }
 
 .c-node:hover::after,
 .c-react:hover::after {
     content: "Básico";
+    position: absolute;
+    padding: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: black;
+    background-size: contain;
+
 }

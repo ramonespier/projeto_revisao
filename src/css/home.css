@@ -64,3 +64,20 @@
 .js {
     background-image: url(../img/javascript.png);
 }
+
+
+.mustang {
+    background-image: url(../img/mustang.png);
+    background-size: cover;
+    background-position: center;
+}
+.listen {
+    background-image: url(../img/listenxd.png);
+    background-size: cover;
+    background-position: center;
+}
+.focus {
+    background-image: url(../img/focus.png);
+    background-size: cover;
+    background-position: center;
+}
