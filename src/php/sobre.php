@@ -33,19 +33,21 @@
 
         <section class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 justify-items-center m-7 p-5 border-b-2">
 
-            <div class="md:col-start-1 md:h-full row-start-1 col-start-1 flex flex-col justify-evenly">
-                <p class="text-justify text-2xl m-3 font-bold italic">Aqui você pode ver minhas habilidades e alguns
-                    projetos!</p>
+            <div class="md:col-start-1 md:row-start-1 md:h-full row-start-2 col-start-1 flex flex-col justify-evenly">
+                <p class="text-justify text-xl m-3 font-light">Em julho de 2024 finalizei um curso profissionalizante de front-end, criado pela Ford em parceria com o SENAI. Estudei no SENAI Conde José Vicente de Azevedo e aprendi detalhadamente desde o básico até frameworks.</p>
+
+                <p class="text-justify text-xl m-3 font-light"> Atualmente estou cursando Técnico em Desenvolvimento de Sistemas no SENAI Armando de Arruda Pereira, e estudando cada vez mais para ter a capacitação necessária para me tornar um desenvolvedor full-stack.</p>
+
+                <p class="text-justify text-2xl m-3 font-bold italic">Aqui você pode ver minhas habilidades e alguns projetos!</p>
             </div>
 
-            <div class="md:col-start-2 md:row-start-1 row-start-2 flex md:min-h-80 items-center justify-center">
+            <div class="md:col-start-2 row-start-1 flex md:min-h-80 items-center justify-center">
                 <img class="rounded-full border-2 border-neutral-200" width="320px" src="../img/1729618845467.jfif"
                     alt="Ramon Coelho">
             </div>
         </section>
 
         <section>
-
             <div class="flex flex-col items-center gap-10 border-b-2 m-7">
                 <span class="text-3xl font-bold italic">SKILLS:</span>
 
@@ -83,7 +85,6 @@
 
                 </div>
             </div>
-
         </section>
 
         <section>
@@ -127,16 +128,14 @@
     <section class="p-5">
         <span class="text-2xl flex justify-center">Entre em contato!</span>
 
-        <div class="h-[550px] md:h-96 w-full p-5 flex justify-center">
-
-            <form action="./contato.php" method="post">
-                <div class="grid md:grid-cols-2 md:grid-rows-5 grid-rows-6 gap-5 text-black">
-                    <input type="text" class="md:p-5 p-5 w-80 md:w-auto row-start-1 md:col-start-1" required placeholder="Nome" name="nome">
-                    <input type="text" class="md:p-5 p-5 w-80 md:w-auto row-start-2 md:row-start-1 md:col-start-2" required placeholder="Assunto" name="assunto">
-                    <input type="email" class="md:p-5 p-5 w-80 md:w-auto row-start-3 md:row-start-2 md:col-start-1 md:col-span-2" required placeholder="E-mail" name="email">
-                    <input type="text" class="md:p-5 p-5 w-80 md:w-auto overflow-auto row-start-4 md:row-start-3 md:col-start-1 md:col-span-2" required placeholder="Descrição" name="descricao">
-                    <input type="submit" class="md:p-5 p-5 w-80 md:w-auto row-start-5 md:row-start-4 md:col-start-1 bg-blue-700 border hover:bg-blue-950">
-                    <input type="reset" class="md:p-5 p-5 w-80 md:w-auto row-start-6 md:row-start-4 md:col-start-2 bg-amber-600 border hover:bg-amber-800">
+        <div class=" w-full p-5 flex justify-center text-lg">
+            <form action="./contato.php" class="w-96" method="post">
+                <div class="grid md:grid-cols-2 md:grid-rows-4 grid-rows-5 gap-5 text-black md:justify-items-stretch justify-items-center">
+                    <input type="text" class="md:p-5 p-5 w-80 md:w-auto row-start-1 md:col-start-1 md:col-span-2" required placeholder="Nome" name="nome">
+                    <input type="email" class="md:p-5 p-5 w-80 md:w-auto row-start-2 md:row-start-2 md:col-start-1 md:col-span-2" required placeholder="E-mail" name="email">
+                    <textarea class="md:p-5 p-5 w-80 md:w-auto overflow-auto row-start-3 md:row-start-3 md:col-start-1 md:col-span-2" required placeholder="O que você gostaria de dizer?" name="descricao"></textarea>
+                    <input type="submit" class="md:p-5 p-5 w-80 md:w-auto row-start-4 md:row-start-4 md:col-start-1 bg-blue-700 border hover:bg-blue-950">
+                    <input type="reset" class="md:p-5 p-5 w-80 md:w-auto row-start-5 md:row-start-4 md:col-start-2 bg-amber-600 border hover:bg-amber-800">
 
                 </div>
             </form>
