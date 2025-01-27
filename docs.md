@@ -1,17 +1,27 @@
 # Documentação da página de portifólio
 
 ## Página home
- - Apresentação da página
- - Projetos
+ - Breve apresentação minha
+ - Imagem de perfil
+ - Botão para navegar para a página sobre
+ - Animação pronta de esrtelas cadentes (JavaScript)
 
 ## Página portifólio
- - Apresentação da pessoal
+ - Apresentação pessoal
  - Projetos
  - Hard skills
- - Contato
+ - Formulário de contato com PHP (arquivo.txt)
+ - Botão para voltar para a página home
+
+## Paleta de cores 
+ - Cor principal: #020617
+ - Cores secundárias: #0f172a, #ffffff, #ffff00
+
+## Framework
+ - TailwindCSS
 
 #### Header
- - Breve apresentação da página
+ - Caminhos entre home e sobre
 
 #### Footer
  - Redes sociais
