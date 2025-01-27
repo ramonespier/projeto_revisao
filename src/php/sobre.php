@@ -142,8 +142,6 @@
         </div>
     </section>
 
-
-
     <footer>
         <div class="lg:h-72 bg-slate-900 border-t-2 border-t-white border-opacity-30
         grid lg:grid-cols-3 lg:grid-rows-2 ">
@@ -167,7 +165,7 @@
             </div>
 
             <div class="lg:col-start-3 lg:row-start-2 flex flex-col justify-center items-center gap-3">
-                <span class="text-2xl font-bold">ENVIE UM EMAIL:</span>
+                <span class="text-2xl font-bold">ENVIE UM EMAIL</span>
 
                 <div class="flex justify-center w-full">
                     <a class="email w-16 h-16 flex items-center justify-center rounded-full"
@@ -177,7 +175,7 @@
 
             <div class="lg:col-start-1 lg:row-start-2 flex flex-col justify-center items-center gap-3">
 
-                <span class="text-2xl font-bold">CONEXÕES:</span>
+                <span class="text-2xl font-bold">CONEXÕES</span>
 
                 <div class="flex justify-evenly w-full">
                     <a class="linkedin w-16 h-16 flex items-center justify-center rounded-full" target="_blank"
