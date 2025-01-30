@@ -23,7 +23,7 @@
     transition: 0.2s;
 }
 
-.card {
+/* .card {
     transition: 0.5s;
 }
 
@@ -39,10 +39,10 @@
     content: "Intermediário";
     position: absolute;
     padding: 10px;
-    background-color: black;
+    background-color: black; */
 
-}
-
+/* } */
+/* 
 .c-node:hover::after,
 .c-react:hover::after {
     content: "Básico";
@@ -51,6 +51,6 @@
     padding-left: 31px;
     padding-right: 31px;
     background-color: black;
-    background-size: contain;
+    background-size: contain; */
 
-}
+/* } */

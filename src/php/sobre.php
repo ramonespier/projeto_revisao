@@ -11,19 +11,25 @@
     <link rel="shortcut icon" href="../img/rabbit.png" type="image/x-icon">
 </head>
 
-<body class="font-josefin bg-slate-950 text-white flex flex-col justify-between">
+<body class="font-josefin dark:bg-slate-950 dark:text-white bg-slate-400 text-black flex flex-col justify-between transition-all duration ease-in-out">
 
     <header>
         <nav
-            class="navbar w-full md:h-24 h-36 bg-slate-900
-        grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 border-b-2 border-b-white border-opacity-30 md:justify-items-stretch justify-items-center">
+            class="navbar w-full md:h-24 h-36 dark:bg-slate-900 bg-slate-300
+        grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 border-b-2 dark:border-b-white border-b-black border-opacity-30 md:justify-items-stretch justify-items-center">
 
             <span class="md:col-start-1 row-start-1 flex items-center m-5 text-2xl justify-center 
-            bg-slate-800 w-60 p-5 border border-white border-opacity-60 rounded-xl
-            font-semibold transition hover:scale-105 cursor-default">Ramon {Coelho};</span>
+            dark:bg-slate-800 bg-slate-200 w-60 p-5 border dark:border-white border-black dark:border-opacity-60 border-opacity-30 rounded-xl
+            font-semibold cursor-default">Ramon Coelho</span>
 
-            <ul class="md:col-start-2 md:row-start-1 row-start-2 flex md:justify-end items-center">
+            <ul class="md:col-start-2 md:row-start-1 row-start-2 flex md:justify-end gap-10 items-center m-7">
                 <li><a class="m-16" href="../index.html">HOME</a></li>
+
+                <li>
+                    <button onclick="toggleDarkMode()" class="w-[45px] border-2 transform hover:scale-105 transition border-opacity-40 rounded-full dark:border-white border-black">
+                        <img src="../img/brilho-e-contraste.png" width="64px" alt="Trocar tema">
+                    </button>
+                </li>
             </ul>
 
         </nav>
@@ -53,32 +59,44 @@
 
                 <div class="flex flex-wrap justify-center gap-5 icons m-16">
 
-                    <div class="flex flex-col items-center gap-2 text-xl p-2 card c-js">
+                    <div class="flex flex-col items-center gap-2 text-xl p-10 card
+                    transition hover:transition hover:bg-slate-50 dark:hover:bg-slate-700 after:content-['Intermediário']
+                    c-js">
                         <span>JavaScript</span>
                         <div class="js128 w-32 h-32 p-5 flex items-center justify-center"></div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-xl p-2 card c-php">
+                    <div class="flex flex-col items-center gap-2 text-xl p-10 card
+                    transition hover:transition hover:bg-slate-50 dark:hover:bg-slate-700 after:content-['Intermediário']
+                    c-php">
                         <span>PHP</span>
                         <div class="php128 w-32 h-32 p-5 flex items-center justify-center"></div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-xl p-2 card c-tw">
+                    <div class="flex flex-col items-center gap-2 text-xl p-10 card
+                    transition hover:transition hover:bg-slate-50 dark:hover:bg-slate-700 after:content-['Intermediário']
+                    c-tw">
                         <span>TailwindCSS</span>
                         <div class="tw128 w-32 h-32 p-5 flex items-center justify-center"></div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-xl p-2 card c-node">
+                    <div class="flex flex-col items-center gap-2 text-xl p-10 card
+                    transition hover:transition hover:bg-slate-50 dark:hover:bg-slate-700 after:content-['Básico']
+                    c-node">
                         <span>Node.js</span>
                         <div class="node128 w-32 h-32 p-5 flex items-center justify-center"></div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-xl p-2 card c-react">
+                    <div class="flex flex-col items-center gap-2 text-xl p-10 card
+                    transition hover:transition hover:bg-slate-50 dark:hover:bg-slate-700 after:content-['Básico']
+                    c-react">
                         <span>React Native</span>
                         <div class="react128 w-32 h-32 p-5 flex items-center justify-center"></div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-xl p-2 card c-git">
+                    <div class="flex flex-col items-center gap-2 text-xl p-10 card
+                    transition hover:transition hover:bg-slate-50 dark:hover:bg-slate-700 after:content-['Intermediário']
+                    c-git">
                         <span>Git</span>
                         <div class="git128 w-32 h-32 p-5 flex items-center justify-center"></div>
                     </div>
@@ -143,7 +161,7 @@
     </section>
 
     <footer>
-        <div class="lg:h-72 bg-slate-900 border-t-2 border-t-white border-opacity-30
+        <div class="lg:h-72 dark:bg-slate-900 bg-slate-300 border-t-2 dark:border-t-white border-t-black border-opacity-30
         grid lg:grid-cols-3 lg:grid-rows-2 ">
 
             <div class="lg:col-start-1 lg:row-start-1 flex flex-col justify-center items-center gap-3">
@@ -196,6 +214,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/tema.js"></script>
 
 
 </body>
