@@ -3,15 +3,11 @@
 ## Página home
  - Breve apresentação minha
  - Imagem de perfil
- - Botão para navegar para a página sobre
- - Animação pronta de esrtelas cadentes (JavaScript)
 
 ## Página portifólio
  - Apresentação pessoal
  - Projetos
  - Hard skills
- - Formulário de contato com PHP (arquivo.txt)
- - Botão para voltar para a página home
 
 ## Paleta de cores 
  - Cor principal: #020617
@@ -20,9 +16,18 @@
 ## Framework
  - TailwindCSS
 
+## Funcionalidades
+ - Responsividade  
+ - Formulário de contato com PHP
+ - Botão de navegação entre as páginas
+ - Animação de estrelas cadentes (JavaScript)
+ - Tema claro e escuro
+
 #### Header
  - Caminhos entre home e sobre
 
 #### Footer
  - Redes sociais
  - Contato
+
+
