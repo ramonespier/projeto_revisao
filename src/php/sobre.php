@@ -15,7 +15,7 @@
 
     <header>
         <nav
-            class="navbar w-full md:h-24 h-36 dark:bg-slate-900 bg-slate-300
+            class="navbar w-full md:h-24 h-36 dark:bg-slate-900 bg-slate-300 animar
         grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 border-b-2 dark:border-b-white border-b-black border-opacity-30 md:justify-items-stretch justify-items-center">
 
             <span class="md:col-start-1 row-start-1 flex items-center m-5 text-2xl justify-center 
@@ -37,7 +37,7 @@
 
     <main>
 
-        <section class="grid md:grid-cols-2 md:grid-rows-1 md:h-[70vh] grid-rows-2 justify-items-center m-7 p-5 border-b-2">
+        <section class="grid md:grid-cols-2 md:grid-rows-1 lg:h-[70vh] grid-rows-2 justify-items-center m-7 p-5 border-b-2 animar">
 
             <div class="md:col-start-1 md:row-start-1 md:h-full row-start-2 col-start-1 flex flex-col justify-evenly">
                 <p class="text-justify text-2xl m-3 font-light">Em julho de 2024 finalizei um curso profissionalizante de front-end, criado pela Ford em parceria com o SENAI. Estudei no SENAI Conde José Vicente de Azevedo e aprendi detalhadamente desde o básico até frameworks.</p>
@@ -54,7 +54,7 @@
         </section>
 
         <section>
-            <div class="flex flex-col items-center gap-10 border-b-2 m-7 md: h-[50vh]">
+            <div class="flex flex-col items-center gap-10 border-b-2 m-7 md:h-[50vh] animar">
                 <span class="text-3xl font-bold italic">SKILLS:</span>
 
                 <div class="flex flex-wrap justify-center gap-5 icons m-16">
@@ -105,7 +105,7 @@
             </div>
         </section>
 
-        <section class="md:h-[60vh]">
+        <section class="md:h-[60vh] animar">
             <span class="font-bold p-5 text-3xl italic flex justify-center row-start-1 col-start-2">PROJETOS:</span>
             <div class="grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 h-96 justify-items-center gap-3 p-5 border-b-2">
 
@@ -143,7 +143,7 @@
 
     </main>
 
-    <section class="p-5">
+    <section class="p-5 animar">
         <span class="text-2xl flex justify-center">Entre em contato!</span>
 
         <div class=" w-full p-5 flex justify-center text-lg">
@@ -161,7 +161,7 @@
     </section>
 
     <footer>
-        <div class="lg:h-72 dark:bg-slate-900 bg-slate-300 border-t-2 dark:border-t-white border-t-black border-opacity-30
+        <div class="lg:h-72 dark:bg-slate-900 bg-slate-300 border-t-2 dark:border-t-white border-t-black border-opacity-30 animar
         grid lg:grid-cols-3 lg:grid-rows-2 ">
 
             <div class="lg:col-start-1 lg:row-start-1 flex flex-col justify-center items-center gap-3">
@@ -216,6 +216,7 @@
     </footer>
 
     <script src="../js/tema.js"></script>
+    <!-- <script src="../js/body.js"></script>    -->
 
 
 </body>

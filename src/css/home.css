@@ -95,3 +95,14 @@
     background-size: cover;
     background-position: center;
 }
+
+/* .animar {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.animar.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+} */
