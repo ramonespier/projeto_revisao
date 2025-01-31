@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/skills.css">
     <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../css/splash.css">
     <link rel="shortcut icon" href="../img/rabbit.png" type="image/x-icon">
 </head>
 
-<body class="font-josefin dark:bg-slate-950 dark:text-white bg-slate-400 text-black flex flex-col justify-between transition-all duration ease-in-out">
+<body class="font-josefin dark:bg-slate-950 dark:text-white bg-slate-400 text-black flex flex-col justify-between transition-all duration ease-in-out overflow-hidden" id="hidden-scroll">
+
+    <div id="splash" class="fixed w-screen h-screen flex justify-center items-center dark:bg-black bg-slate-100 backdrop:blur-lg z-10">
+        <div class="loader">
+            <span class="loader-text">loading</span>
+            <span class="load"></span>
+        </div>
+    </div>
 
     <header>
         <nav
@@ -20,7 +28,7 @@
 
             <span class="md:col-start-1 row-start-1 flex items-center m-5 text-2xl justify-center 
             dark:bg-slate-800 bg-slate-200 w-60 p-5 border dark:border-white border-black dark:border-opacity-60 border-opacity-30 rounded-xl
-            font-semibold cursor-default">Ramon Coelho</span>   
+            font-semibold cursor-default">Ramon Coelho</span>
 
             <ul class="md:col-start-2 md:row-start-1 row-start-2 flex md:justify-end gap-10 items-center m-7">
                 <li><a class="m-16" href="../index.html">HOME</a></li>
@@ -217,6 +225,7 @@
 
     <script src="../js/tema.js"></script>
     <!-- <script src="../js/body.js"></script>    -->
+     <script src="../js/splash-screen.js"></script>
 
 
 </body>
