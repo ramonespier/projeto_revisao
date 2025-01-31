@@ -4,27 +4,35 @@
  - Breve apresentação minha
  - Imagem de perfil
 
-## Página portifólio
+## Página sobre
  - Apresentação pessoal
  - Projetos
  - Hard skills
 
 ## Paleta de cores 
- - Cor principal: #020617
- - Cores secundárias: #0f172a, #ffffff, #ffff00
+
+### Modo escuro
+ - Background: #020617
+ - Foreground: #0f172a, #ffffff, #ffff00
+
+### Modo claro
+ - Background: #94a3b8
+ - Foreground: #cdb5e1, #000000, #e2e8f0
 
 ## Framework
  - TailwindCSS
 
-## Funcionalidades
- - Responsividade  
+## Requisitos funcionais
  - Formulário de contato com PHP
- - Botão de navegação entre as páginas
- - Animação de estrelas cadentes (JavaScript)
+ - Navegação entre as páginas
+ - Animação de estrelas cadentes
  - Tema claro e escuro
 
-#### Header
- - Caminhos entre home e sobre
+## Requisitos não funcionais
+ - Responsividade
+ - Acessibilidade
+ - Desempenho rápido
+ - Intuitivo
 
 #### Footer
  - Redes sociais
