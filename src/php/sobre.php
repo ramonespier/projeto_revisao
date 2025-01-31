@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 
             <span class="md:col-start-1 row-start-1 flex items-center m-5 text-2xl justify-center 
             dark:bg-slate-800 bg-slate-200 w-60 p-5 border dark:border-white border-black dark:border-opacity-60 border-opacity-30 rounded-xl
-            font-semibold cursor-default">Ramon Coelho</span>
+            font-semibold cursor-default">Ramon Coelho</span>   
 
             <ul class="md:col-start-2 md:row-start-1 row-start-2 flex md:justify-end gap-10 items-center m-7">
                 <li><a class="m-16" href="../index.html">HOME</a></li>
@@ -37,24 +37,24 @@
 
     <main>
 
-        <section class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 justify-items-center m-7 p-5 border-b-2">
+        <section class="grid md:grid-cols-2 md:grid-rows-1 md:h-[70vh] grid-rows-2 justify-items-center m-7 p-5 border-b-2">
 
             <div class="md:col-start-1 md:row-start-1 md:h-full row-start-2 col-start-1 flex flex-col justify-evenly">
-                <p class="text-justify text-xl m-3 font-light">Em julho de 2024 finalizei um curso profissionalizante de front-end, criado pela Ford em parceria com o SENAI. Estudei no SENAI Conde José Vicente de Azevedo e aprendi detalhadamente desde o básico até frameworks.</p>
+                <p class="text-justify text-2xl m-3 font-light">Em julho de 2024 finalizei um curso profissionalizante de front-end, criado pela Ford em parceria com o SENAI. Estudei no SENAI Conde José Vicente de Azevedo e aprendi detalhadamente desde o básico até frameworks.</p>
 
-                <p class="text-justify text-xl m-3 font-light"> Atualmente estou cursando Técnico em Desenvolvimento de Sistemas no SENAI Armando de Arruda Pereira, e estudando cada vez mais para ter a capacitação necessária para me tornar um desenvolvedor full-stack.</p>
+                <p class="text-justify text-2xl m-3 font-light"> Atualmente estou cursando Técnico em Desenvolvimento de Sistemas no SENAI Armando de Arruda Pereira, e estudando cada vez mais para ter a capacitação necessária para me tornar um desenvolvedor full-stack.</p>
 
-                <p class="text-justify text-2xl m-3 font-bold italic">Aqui você pode ver minhas habilidades e alguns projetos!</p>
+                <p class="text-justify text-3xl m-3 font-bold italic">Aqui você pode ver minhas habilidades e alguns projetos!</p>
             </div>
 
             <div class="md:col-start-2 row-start-1 flex md:min-h-80 items-center justify-center">
-                <img class="rounded-full border-2 border-neutral-200" width="320px" src="../img/1729618845467.jfif"
+                <img class="rounded-full border-2 dark:border-neutral-200 border-neutral-700 shadow-xl shadow-black dark:shadow-gray-500" width="320px" src="../img/1729618845467.jfif"
                     alt="Ramon Coelho">
             </div>
         </section>
 
         <section>
-            <div class="flex flex-col items-center gap-10 border-b-2 m-7">
+            <div class="flex flex-col items-center gap-10 border-b-2 m-7 md: h-[50vh]">
                 <span class="text-3xl font-bold italic">SKILLS:</span>
 
                 <div class="flex flex-wrap justify-center gap-5 icons m-16">
@@ -105,7 +105,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="md:h-[60vh]">
             <span class="font-bold p-5 text-3xl italic flex justify-center row-start-1 col-start-2">PROJETOS:</span>
             <div class="grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 h-96 justify-items-center gap-3 p-5 border-b-2">
 
