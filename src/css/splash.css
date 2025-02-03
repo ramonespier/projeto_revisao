@@ -133,6 +133,18 @@
       width: 16px;
     }
   }
+
+  @keyframes transicao {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      display: none;
+    }
+  }
+
    
    
   
