@@ -31,7 +31,23 @@
             font-semibold cursor-default">Ramon Coelho</span>
 
             <ul class="md:col-start-2 md:row-start-1 row-start-2 flex md:justify-end gap-10 items-center m-7">
-                <li><a class="m-16" href="../index.html">HOME</a></li>
+                <li>
+                    <a href="../index.html" class="nav-a dark:text-white text-black transition-all
+                    dark:after:bg-yellow-400 dark:before:bg-yellow-400
+                    after:bg-violet-700 before:bg-violet-700
+                    dark:hover:text-yellow-100 hover:text-violet-900">
+                        HOME
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./php/certificado.php" class="nav-a dark:text-white text-black transition-all
+                    dark:after:bg-yellow-400 dark:before:bg-yellow-400
+                    after:bg-violet-700 before:bg-violet-700
+                    dark:hover:text-yellow-100 hover:text-violet-900">
+                        CERTIFICAÇÕES
+                    </a>
+                </li>
 
                 <li>
                     <button onclick="toggleDarkMode()" class="w-[45px] border-2 transform hover:scale-105 transition border-opacity-40 rounded-full dark:border-white border-black">
@@ -224,8 +240,7 @@
     </footer>
 
     <script src="../js/tema.js"></script>
-    <!-- <script src="../js/body.js"></script>    -->
-     <script src="../js/splash-screen.js"></script>
+    <script src="../js/splash-screen.js"></script>
 
 
 </body>
