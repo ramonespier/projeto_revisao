@@ -1,3 +1,7 @@
+<?php
+require_once 'cert-arrays.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 
@@ -12,14 +16,14 @@
     <link rel="shortcut icon" href="../img/rabbit.png" type="image/x-icon">
 </head>
 
-<body class="font-josefin dark:bg-slate-950 dark:text-white bg-slate-400 text-black h-screen flex flex-col justify-between transition-all duration ease-in-out overflow-hidden" id="hidden-scroll">
+<body class="font-josefin dark:bg-slate-950 dark:text-white bg-slate-400 text-black h-screen flex flex-col justify-between transition-all duration ease-in-out" id="hidden-scroll">
 
-    <div id="splash" class="fixed w-screen h-screen flex justify-center items-center dark:bg-black bg-slate-100 backdrop:blur-lg z-10">
+    <!-- <div id="splash" class="fixed w-screen h-screen flex justify-center items-center dark:bg-black bg-slate-100 backdrop:blur-lg z-10">
         <div class="loader">
             <span class="loader-text">loading</span>
             <span class="load"></span>
         </div>
-    </div>
+    </div> -->
 
     <header>
         <nav
@@ -41,7 +45,7 @@
                 </li>
 
                 <li>
-                    <a href="./php/sobre.php" class="nav-a dark:text-white text-black transition-all
+                    <a href="./sobre.php" class="nav-a dark:text-white text-black transition-all
                     dark:after:bg-yellow-400 dark:before:bg-yellow-400
                     after:bg-violet-700 before:bg-violet-700
                     dark:hover:text-yellow-100 hover:text-violet-900">
@@ -50,8 +54,73 @@
                 </li>
 
                 <li>
-                    <button onclick="toggleDarkMode()" class="w-[45px] border-2 transform hover:scale-105 transition border-opacity-40 rounded-full dark:border-white border-black">
-                        <img src="../img/brilho-e-contraste.png" width="64px" alt="Trocar tema">
+                    <button class="border-2 border-black rounded-full dark:border-slate-400 border-opacity-35">
+                        <label class="switch">
+                            <input id="input" type="checkbox" checked="darkTheme" onclick="toggleDarkMode()" />
+                            <div class="slider round">
+                                <div class="sun-moon">
+                                    <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+
+                                    <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                    <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="50"></circle>
+                                    </svg>
+                                </div>
+                                <div class="stars">
+                                    <svg id="star-1" class="estrela" viewBox="0 0 20 20">
+                                        <path
+                                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                        </path>
+                                    </svg>
+                                    <svg id="star-2" class="estrela" viewBox="0 0 20 20">
+                                        <path
+                                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                        </path>
+                                    </svg>
+                                    <svg id="star-3" class="estrela" viewBox="0 0 20 20">
+                                        <path
+                                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                        </path>
+                                    </svg>
+                                    <svg id="star-4" class="estrela" viewBox="0 0 20 20">
+                                        <path
+                                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </label>
                     </button>
                 </li>
             </ul>
@@ -60,9 +129,27 @@
     </header>
 
     <section>
-        <div>
-            
+        <div class="grid md:grid-cols-2 md:grid-rows-2 gap-20 p-20 grid-cols-1 grid-rows-4 justify-items-center">      
+        <?php
+
+            foreach($certificado as $card){
+                echo "<div class='w-full h-96 border border-white row-auto
+                        flex items-center flex-col p-5 gap-5 col-auto
+                        text-center font-light text-lg'>";
+
+                echo "<p class='p-5 font-bold text-xl'>" . $card['nome'] . "</p>";
+                
+                echo "<p>" . $card['periodo'] . "</p>";
+                echo "<p>" . $card['duracao'] . "</p>";
+                echo "<p>" . $card['lugar'] . "</p>";
+
+                echo "</div>";
+
+            }
+        ?>
         </div>
+
+        
     </section>
 
 
